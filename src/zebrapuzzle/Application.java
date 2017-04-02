@@ -117,7 +117,7 @@ public class Application
         sb.append(street.writeHouseProp());
         sb.append("</result>");
         
-        Files.write(Paths.get("result.xml"), sb.toString().getBytes(), StandardOpenOption.CREATE);
+        Files.write(Paths.get("output.xml"), sb.toString().getBytes(), StandardOpenOption.CREATE);
     }
 
     static Set<Condition> readIn(String fileName)
